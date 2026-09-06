@@ -1,10 +1,18 @@
-﻿namespace Asgiment4
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Asgiment4
 {
     internal class Program
+
     {
+        public static void PrintBookInfo(string title,int pages=300) {
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //answer 1
+            double[] arr = new double[] { 25.5, 40.0, 33.75 };
+            Console.WriteLine(arr[1]);
+
         }
     }
 }
