@@ -30,6 +30,11 @@ namespace Asgiment4
         {
             return pages += 50;
         }
+        //answer 8
+        public static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+        }
 
         static void Main(string[] args)
         {
@@ -58,7 +63,10 @@ namespace Asgiment4
             AddBounsPages1(ref pages);
             Console.WriteLine(pages);//لانه بيشير لنفس المكان بيروح لنفس الvarمش زي المره الى فاتت بياخد copyمن الvalue
 
-
+            //answer 8
+            double[] prices = { 10.0, 12.5, 15.0 };
+            ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);
 
         }
     }
