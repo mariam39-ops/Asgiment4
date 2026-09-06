@@ -25,6 +25,11 @@ namespace Asgiment4
         {
             return price[0] = price[0] - 5;
         }
+        //answer 7
+        public static int AddBounsPages1(ref int pages)
+        {
+            return pages += 50;
+        }
 
         static void Main(string[] args)
         {
@@ -49,6 +54,9 @@ namespace Asgiment4
             double[] price = { 25.5, 40.0 };
             ApplyDiscount(price);
             Console.WriteLine(price[0]);
+            //answer 7
+            AddBounsPages1(ref pages);
+            Console.WriteLine(pages);//لانه بيشير لنفس المكان بيروح لنفس الvarمش زي المره الى فاتت بياخد copyمن الvalue
 
 
 
