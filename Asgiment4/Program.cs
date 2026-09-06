@@ -20,6 +20,11 @@ namespace Asgiment4
         {
             return pages += 50;
         }
+        //answer 6
+        public static double ApplyDiscount(double[] price)
+        {
+            return price[0] = price[0] - 5;
+        }
 
         static void Main(string[] args)
         {
@@ -40,6 +45,11 @@ namespace Asgiment4
             int pages = 400;
             AddBounsPages(pages);
             Console.WriteLine(pages);//مفيش زياده لان دى value type بياخد copy منالvariable passing by value
+            //answer 6
+            double[] price = { 25.5, 40.0 };
+            ApplyDiscount(price);
+            Console.WriteLine(price[0]);
+
 
 
         }
