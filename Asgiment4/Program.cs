@@ -5,7 +5,10 @@ namespace Asgiment4
     internal class Program
 
     {
-        public static void PrintBookInfo(string title,int pages=300) {
+        //answer 3
+        public static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the library!");
         }
         static void Main(string[] args)
         {
@@ -18,6 +21,9 @@ namespace Asgiment4
                 {3,5 },
                 {1,4 }
             }; Console.WriteLine(ShelfCopies[1, 0]);
+            //answer 3
+            PrintWelcomeMessage();
+
         }
     }
 }
