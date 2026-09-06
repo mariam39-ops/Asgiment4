@@ -51,6 +51,9 @@ namespace Asgiment4
 
             }
 
+        }//answer 10 
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
         }
 
         static void Main(string[] args)
@@ -87,7 +90,10 @@ namespace Asgiment4
             //answer 9
             double pre;
             Console.WriteLine(TryGetPrice("clean code", out pre));
-            
+            //answer 10
+            PrintBookInfo("learn english");
+            PrintBookInfo("learn english", 700);
+
 
         }
     }
