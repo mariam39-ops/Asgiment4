@@ -35,6 +35,23 @@ namespace Asgiment4
         {
             prices = new double[] { 10.0, 12.5, 15.0 };
         }
+        //answer9
+        public static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "clean code")
+            {
+                price = 25.5;
+
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+
+            }
+
+        }
 
         static void Main(string[] args)
         {
@@ -67,6 +84,10 @@ namespace Asgiment4
             double[] prices = { 10.0, 12.5, 15.0 };
             ReplaceArray(ref prices);
             Console.WriteLine(prices.Length);
+            //answer 9
+            double pre;
+            Console.WriteLine(TryGetPrice("clean code", out pre));
+            
 
         }
     }
