@@ -15,8 +15,13 @@ namespace Asgiment4
         {
             return $"book title : {title}";
         }
+        //answer 5
+        public static int AddBounsPages(int pages)
+        {
+            return pages += 50;
+        }
 
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             //answer 1
             double[] arr = new double[] { 25.5, 40.0, 33.75 };
@@ -31,6 +36,11 @@ namespace Asgiment4
             PrintWelcomeMessage();
             //answer 4
             Console.WriteLine(PrintBookTitle("Clean code"));
+            //answer 5
+            int pages = 400;
+            AddBounsPages(pages);
+            Console.WriteLine(pages);//مفيش زياده لان دى value type بياخد copy منالvariable passing by value
+
 
         }
     }
