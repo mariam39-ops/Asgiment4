@@ -55,6 +55,14 @@ namespace Asgiment4
         public static void PrintBookInfo(string title, int pages = 300)
         {
         }
+        //answer 12
+        public static void PrintAllTitles(string[] parramsTitle)
+        {
+            foreach(string title in parramsTitle)
+            {
+                Console.WriteLine(title);
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -95,6 +103,9 @@ namespace Asgiment4
             PrintBookInfo("learn english", 700);
             //answer 11
             PrintBookInfo( pages:700,  title:"learn");
+            //answer 12
+            string[] par = { "mariam", "mohamed", "ahwmd" };
+            PrintAllTitles(par);
 
 
         }
