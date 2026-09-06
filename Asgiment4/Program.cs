@@ -10,7 +10,13 @@ namespace Asgiment4
         {
             Console.WriteLine("Welcome to the library!");
         }
-        static void Main(string[] args)
+        //answer 4
+        public static string PrintBookTitle(string title)
+        {
+            return $"book title : {title}";
+        }
+
+            static void Main(string[] args)
         {
             //answer 1
             double[] arr = new double[] { 25.5, 40.0, 33.75 };
@@ -23,6 +29,8 @@ namespace Asgiment4
             }; Console.WriteLine(ShelfCopies[1, 0]);
             //answer 3
             PrintWelcomeMessage();
+            //answer 4
+            Console.WriteLine(PrintBookTitle("Clean code"));
 
         }
     }
