@@ -12,7 +12,12 @@ namespace Asgiment4
             //answer 1
             double[] arr = new double[] { 25.5, 40.0, 33.75 };
             Console.WriteLine(arr[1]);
-
+            //answer 2
+            int[,] ShelfCopies =
+           {
+                {3,5 },
+                {1,4 }
+            }; Console.WriteLine(ShelfCopies[1, 0]);
         }
     }
 }
